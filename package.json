@@ -1,0 +1,27 @@
+{
+  "name": "trainingjs_webdriverio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sylwia-Lewera/trainingJS_WebDriverIO.git"
+  },
+  "keywords": [],
+  "author": "Sylwia_Lewera@epam.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sylwia-Lewera/trainingJS_WebDriverIO/issues"
+  },
+  "homepage": "https://github.com/Sylwia-Lewera/trainingJS_WebDriverIO#readme",
+  "devDependencies": {
+    "@wdio/cli": "^8.3.11",
+    "wdio-chromedriver-service": "^8.1.1"
+  },
+  "dependencies": {
+    "chromedriver": "^110.0.0"
+  }
+}
