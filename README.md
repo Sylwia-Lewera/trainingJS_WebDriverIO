@@ -19,7 +19,6 @@ ACCEPTANCE CRITERIA
 4.  Different assertions are used
 
 5. Reporter configured
-
 As a system under test you may use Appointment Planner Application Appointment Planner - Syncfusion Angular Components Showcase App:
 https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard
 ---------------------------------------------------------------------------------------------------------------------------------------------
