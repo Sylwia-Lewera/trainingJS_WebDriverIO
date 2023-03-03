@@ -1,4 +1,8 @@
 describe("Test suite", () => {
+    const elementWaitClick = async (elem) => {
+        await elem.waitForExist();
+        elem.click();
+    };
     afterEach(()=> {
         validator = null;
       });
@@ -35,6 +39,11 @@ await expect(elem).toExist()
     it("Check patients data Symptoms", async () => {
         await $("div.patients").click();
         const elem = await $("//span[text()='Symptoms']")
-await expect(elem).toBePresent()
+        await expect(elem).toBePresent();
+    });
+    it("Wait for patients view and click Add New Patient button", async () => {
+        await elementWaitClick(await $("div.patients"));
+        await elementWaitClick(await $("//button[text()='Add New Patient']"));
+
     });
 })
