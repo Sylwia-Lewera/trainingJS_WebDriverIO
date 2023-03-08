@@ -14,10 +14,12 @@ describe("Test suite", () => {
     afterEach(()=> {
         validator = null;
       });
+    //   beforeEach(async() => {
+    //     await browser.url("https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard");
+    //   });
     it("First test", async () =>{
         await browser.url("https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard");
         const pageTitle = await browser.getTitle();
-
         expect(pageTitle).toEqual("Appointment Planner - Syncfusion Angular Components Showcase App");
     });
     it("Second test", async () => {
@@ -62,10 +64,35 @@ describe("Test suite", () => {
         const patientNameInput = await $("#Name input");
         await elementSetValue(patientNameInput,"Axel Doe");
         expect(await patientNameInput.getValue()).toEqual("Axel Doe");
+        await $('body > div:nth-child(16) > ejs-dialog > div.e-footer-content > div > button:nth-child(1)').click();
+        await browser.pause(5000);
 
     });
-    // it("Add New Patient name", async () => {
-     //   document.querySelector("#patient-wrapper > div > div.patient-operations > button")
-    // });
+    it("scenario that utilizes execute() command", async () => {
+        await browser.url("https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard");
+        await elementWaitClick(await $("//span[text()='Patients']"));
+        const doctor = await $("a[href='#/doctor-details/5']");
+        await browser.execute(function (doctor){
+doctor.style.border = "red solid 2px";
+        }, doctor);
+        await browser.pause(5000);
+    });
+    it("scenario that utilizes waitUntil() command", async () => {
+        await $("div.doctors").click();
+        await browser.waitUntil(
+            async() => (await $(await $("//button[text()='Add New Doctor']")).isDisplayed()),
+            {
+                timeout: 100,
+                interval: 60,
+                timeoutMsg: "not loaded"
+            }
+        );
+    });
+    it("scenario that utilizes browser actions", async () => {
+        await browser.url("https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard");
+        const row = await $("#grid_394431918_0_content_table > tbody > tr:nth-child(1) > td:nth-child(2)"); 
+        await row.moveTo();
+        await browser.pause(5000);
+    });
 });
 
