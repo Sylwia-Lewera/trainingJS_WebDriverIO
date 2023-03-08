@@ -1,8 +1,16 @@
 describe("Test suite", () => {
     const elementWaitClick = async (elem) => {
         await elem.waitForExist();
-        elem.click();
+        elem.click({
+            button: "0",
+            x: 10,
+            y: 3
+        });
     };
+    const elementSetValue = async (elem,value) => {
+        await elem.waitForDisplayed();
+        elem.addValue(value);
+};
     afterEach(()=> {
         validator = null;
       });
@@ -33,8 +41,8 @@ describe("Test suite", () => {
     });
     it("Check patients data Blood Group", async () => {
         await $("div.patients").click();
-        const elem = await $('div.blood-group')
-await expect(elem).toExist()
+        const elem = await $('div.blood-group');
+        await expect(elem).toExist();
     });
     it("Check patients data Symptoms", async () => {
         await $("div.patients").click();
@@ -42,8 +50,22 @@ await expect(elem).toExist()
         await expect(elem).toBePresent();
     });
     it("Wait for patients view and click Add New Patient button", async () => {
-        await elementWaitClick(await $("div.patients"));
-        await elementWaitClick(await $("//button[text()='Add New Patient']"));
+        await elementWaitClick(await $("//span[text()='Patients']"));
+        await $("//button[text()='Add New Patient']").click();
+        await $('body > div:nth-child(16) > ejs-dialog > div.e-footer-content > div > button:nth-child(1)').click();
+        await browser.pause(5000);
 
     });
-})
+    it("Add New Patient name", async () => {
+        await elementWaitClick(await $("//span[text()='Patients']"));
+        await $("//button[text()='Add New Patient']").click();
+        const patientNameInput = await $("#Name input");
+        await elementSetValue(patientNameInput,"Axel Doe");
+        expect(await patientNameInput.getValue()).toEqual("Axel Doe");
+
+    });
+    // it("Add New Patient name", async () => {
+     //   document.querySelector("#patient-wrapper > div > div.patient-operations > button")
+    // });
+});
+
