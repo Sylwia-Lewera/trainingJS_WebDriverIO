@@ -58,3 +58,20 @@ ACCEPTANCE CRITERIA
 
 3.    Browser actions scenario is implemented
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
+TASK #4 Configuration
+
+1.    Add Junit reporter to your TAF 
+
+2.    Save screenshots in case of failed test scenarios 
+
+3.   Make it possible to run your tests on Firefox browser 
+
+ 
+
+ACCEPTANCE CRITERIA 
+
+1.    Junit reporter is added 
+
+2.    Screenshots for the failed tests are saved 
+
+3.    Tests are run on Firefox browser 

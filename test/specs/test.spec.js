@@ -1,10 +1,10 @@
 describe("Test suite", () => {
     const elementWaitClick = async (elem) => {
         await elem.waitForExist();
-        elem.click({
-            button: "0",
-            x: 10,
-            y: 3
+        await elem.click({
+            button: 'left',
+            x: 20,
+            y: 5
         });
     };
     const elementSetValue = async (elem,value) => {
@@ -14,11 +14,10 @@ describe("Test suite", () => {
     afterEach(()=> {
         validator = null;
       });
-    //   beforeEach(async() => {
-    //     await browser.url("https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard");
-    //   });
-    it("First test", async () =>{
+      beforeEach(async() => {
         await browser.url("https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard");
+      });
+    it("First test", async () =>{
         const pageTitle = await browser.getTitle();
         expect(pageTitle).toEqual("Appointment Planner - Syncfusion Angular Components Showcase App");
     });
@@ -33,7 +32,7 @@ describe("Test suite", () => {
     });
     it("providing invalid email results in error", async () => {
         await $("div.doctors").click();
-        await $("//button[text()='Add New Doctor']").click();
+        await elementWaitClick(await $("//button[text()='Add New Doctor']"));
         await $("input[name='Name']").setValue("John Doe");
         await $("input[name='Email']").setValue("test@test");
         await $("//button[text()='Save']").click();
@@ -52,15 +51,15 @@ describe("Test suite", () => {
         await expect(elem).toBePresent();
     });
     it("Wait for patients view and click Add New Patient button", async () => {
-        await elementWaitClick(await $("//span[text()='Patients']"));
-        await $("//button[text()='Add New Patient']").click();
-        await $('body > div:nth-child(16) > ejs-dialog > div.e-footer-content > div > button:nth-child(1)').click();
+        await elementWaitClick(await $("//*[@id='plannerSiderBar']/div/div[5]/span[2]")); //open patients tab
+        await $("#patient-wrapper > div > div.patient-operations > button").click(); //click Add New Patient button
+        await $('body > div:nth-child(16) > ejs-dialog > div.e-footer-content > div > button:nth-child(1)').click(); //click Cancel button
         await browser.pause(5000);
 
     });
     it("Add New Patient name", async () => {
-        await elementWaitClick(await $("//span[text()='Patients']"));
-        await $("//button[text()='Add New Patient']").click();
+        await elementWaitClick(await $("//*[@id='plannerSiderBar']/div/div[5]/span[2]"));
+        await $("//*[@id='patient-wrapper']/div/div[1]/button").click();
         const patientNameInput = await $("#Name input");
         await elementSetValue(patientNameInput,"Axel Doe");
         expect(await patientNameInput.getValue()).toEqual("Axel Doe");
@@ -69,9 +68,7 @@ describe("Test suite", () => {
 
     });
     it("scenario that utilizes execute() command", async () => {
-        await browser.url("https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard");
-        await elementWaitClick(await $("//span[text()='Patients']"));
-        const doctor = await $("a[href='#/doctor-details/5']");
+        const doctor = await $('a[href="#/doctor-details/5"]');
         await browser.execute(function (doctor){
 doctor.style.border = "red solid 2px";
         }, doctor);
@@ -89,7 +86,6 @@ doctor.style.border = "red solid 2px";
         );
     });
     it("scenario that utilizes browser actions", async () => {
-        await browser.url("https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard");
         const row = await $("#grid_394431918_0_content_table > tbody > tr:nth-child(1) > td:nth-child(2)"); 
         await row.moveTo();
         await browser.pause(5000);

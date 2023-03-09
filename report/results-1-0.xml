@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Test suite" timestamp="2023-03-09T18:40:41" time="31.865" tests="10" failures="2" errors="2" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Test suite"/>
+      <property name="capabilities" value="firefox.110_0_1.windows"/>
+      <property name="file" value="file:///C:/Users/Sylwia_Lewera/Documents/JS_WebDriverIO/trainingJS_WebDriverIO/test/specs/test.spec.js"/>
+    </properties>
+    <testcase classname="firefox.110_0_1.windows.Test_suite" name="First test" time="1.997">
+      <system-out><![CDATA[
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: GET /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/title - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.110_0_1.windows.Test_suite" name="Second test" time="1.145">
+      <system-out><![CDATA[
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/d5899e73-3063-49b1-b228-97e808855049/click - {}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/115a70a2-fe11-41b7-b66d-52745d37e64a/click - {}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"css selector","value":"input[name='Name']"}
+RESULT: {"using":"css selector","value":"input[name='Name']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/7951e731-342a-4373-93c2-1295cfb935c6/clear - {}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/7951e731-342a-4373-93c2-1295cfb935c6/value - {"text":"John Doe"}
+RESULT: {"text":"John Doe"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"xpath","value":"//button[text()='Save']"}
+RESULT: {"using":"xpath","value":"//button[text()='Save']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/efa45819-d2e6-4222-a5d6-bc662b4d5d53/click - {}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"css selector","value":"Label#Email-info"}
+RESULT: {"using":"css selector","value":"Label#Email-info"}
+COMMAND: GET /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/8d2fb13f-2b47-4304-83a0-94dc851e4e1b/text - {}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"xpath","value":"//button[text()='Cancel']"}
+RESULT: {"using":"xpath","value":"//button[text()='Cancel']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/597e4273-a750-4784-a295-2c9a094acc8f/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.110_0_1.windows.Test_suite" name="providing invalid email results in error" time="10.435">
+      <failure/>
+      <error message="element (&quot;//button[text()='Add New Doctor']&quot;) still not existing after 10000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/d5899e73-3063-49b1-b228-97e808855049/click - {}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: GET /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/screenshot - {}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//button[text()='Add New Doctor']") still not existing after 10000ms
+    at async elementWaitClick (C:\Users\Sylwia_Lewera\Documents\JS_WebDriverIO\trainingJS_WebDriverIO\test\specs\test.spec.js:3:9)
+    at async Context.<anonymous> (C:\Users\Sylwia_Lewera\Documents\JS_WebDriverIO\trainingJS_WebDriverIO\test\specs\test.spec.js:35:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="firefox.110_0_1.windows.Test_suite" name="Check patients data Blood Group" time="0.363">
+      <system-out><![CDATA[
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/743ed50e-acc4-488a-91a0-1cec0c96ca18/click - {}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"css selector","value":"div.blood-group"}
+RESULT: {"using":"css selector","value":"div.blood-group"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"css selector","value":"div.blood-group"}
+RESULT: {"using":"css selector","value":"div.blood-group"}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.110_0_1.windows.Test_suite" name="Check patients data Symptoms" time="0.363">
+      <system-out><![CDATA[
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/743ed50e-acc4-488a-91a0-1cec0c96ca18/click - {}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"xpath","value":"//span[text()='Symptoms']"}
+RESULT: {"using":"xpath","value":"//span[text()='Symptoms']"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//span[text()='Symptoms']"}
+RESULT: {"using":"xpath","value":"//span[text()='Symptoms']"}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.110_0_1.windows.Test_suite" name="Wait for patients view and click Add New Patient button" time="5.676">
+      <system-out><![CDATA[
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"xpath","value":"//*[@id='plannerSiderBar']/div/div[5]/span[2]"}
+RESULT: {"using":"xpath","value":"//*[@id='plannerSiderBar']/div/div[5]/span[2]"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//*[@id='plannerSiderBar']/div/div[5]/span[2]"}
+RESULT: {"using":"xpath","value":"//*[@id='plannerSiderBar']/div/div[5]/span[2]"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/actions - {"actions":[{"id":"action1","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+RESULT: {"actions":[{"id":"action1","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/actions - {}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"css selector","value":"#patient-wrapper > div > div.patient-operations > button"}
+RESULT: {"using":"css selector","value":"#patient-wrapper > div > div.patient-operations > button"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/c7f06d79-19f6-4900-95a1-221dc4638c60/click - {}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"css selector","value":"body > div:nth-child(16) > ejs-dialog > div.e-footer-content > div > button:nth-child(1)"}
+RESULT: {"using":"css selector","value":"body > div:nth-child(16) > ejs-dialog > div.e-footer-content > div > button:nth-child(1)"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/d9a1edac-824c-4b99-971e-9b635bead7a5/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.110_0_1.windows.Test_suite" name="Add New Patient name" time="5.765">
+      <system-out><![CDATA[
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"xpath","value":"//*[@id='plannerSiderBar']/div/div[5]/span[2]"}
+RESULT: {"using":"xpath","value":"//*[@id='plannerSiderBar']/div/div[5]/span[2]"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"xpath","value":"//*[@id='plannerSiderBar']/div/div[5]/span[2]"}
+RESULT: {"using":"xpath","value":"//*[@id='plannerSiderBar']/div/div[5]/span[2]"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/actions - {"actions":[{"id":"action2","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+RESULT: {"actions":[{"id":"action2","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/actions - {}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"xpath","value":"//*[@id='patient-wrapper']/div/div[1]/button"}
+RESULT: {"using":"xpath","value":"//*[@id='patient-wrapper']/div/div[1]/button"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/02c399b5-8fb3-4fe8-af3b-1a800377e4aa/click - {}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"css selector","value":"#Name input"}
+RESULT: {"using":"css selector","value":"#Name input"}
+COMMAND: GET /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/ba0e46d3-1f77-4991-ba46-2f1c0478e23f/displayed - {}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/ba0e46d3-1f77-4991-ba46-2f1c0478e23f/value - {"text":"Axel Doe"}
+COMMAND: GET /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/ba0e46d3-1f77-4991-ba46-2f1c0478e23f/property/value - {}
+RESULT: {"text":"Axel Doe"}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"css selector","value":"body > div:nth-child(16) > ejs-dialog > div.e-footer-content > div > button:nth-child(1)"}
+RESULT: {"using":"css selector","value":"body > div:nth-child(16) > ejs-dialog > div.e-footer-content > div > button:nth-child(1)"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/f5e2eaeb-313a-41dd-8045-ac7609f3fd33/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.110_0_1.windows.Test_suite" name="scenario that utilizes execute command" time="0.119">
+      <failure/>
+      <error message="The element with selector &quot;a[href=&quot;#/doctor-details/5&quot;]&quot; you are trying to pass into the execute method wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"css selector","value":"a[href=\"#/doctor-details/5\"]"}
+RESULT: {"using":"css selector","value":"a[href=\"#/doctor-details/5\"]"}
+COMMAND: GET /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/screenshot - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: The element with selector "a[href="#/doctor-details/5"]" you are trying to pass into the execute method wasn't found
+    at Array.map (<anonymous>)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (C:\Users\Sylwia_Lewera\Documents\JS_WebDriverIO\trainingJS_WebDriverIO\test\specs\test.spec.js:72:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="firefox.110_0_1.windows.Test_suite" name="scenario that utilizes waitUntil command" time="0.297">
+      <system-out><![CDATA[
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/d5899e73-3063-49b1-b228-97e808855049/click - {}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: GET /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/ef51b465-1b1b-42c5-ade8-1e65135b0477/displayed - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.110_0_1.windows.Test_suite" name="scenario that utilizes browser actions" time="5.694">
+      <system-out><![CDATA[
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"css selector","value":"#grid_394431918_0_content_table > tbody > tr:nth-child(1) > td:nth-child(2)"}
+RESULT: {"using":"css selector","value":"#grid_394431918_0_content_table > tbody > tr:nth-child(1) > td:nth-child(2)"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"css selector","value":"#grid_394431918_0_content_table > tbody > tr:nth-child(1) > td:nth-child(2)"}
+RESULT: {"using":"css selector","value":"#grid_394431918_0_content_table > tbody > tr:nth-child(1) > td:nth-child(2)"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/elements - {"using":"css selector","value":"#grid_394431918_0_content_table > tbody > tr:nth-child(1) > td:nth-child(2)"}
+RESULT: {"using":"css selector","value":"#grid_394431918_0_content_table > tbody > tr:nth-child(1) > td:nth-child(2)"}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element - {"using":"css selector","value":"#grid_394431918_0_content_table > tbody > tr:nth-child(1) > td:nth-child(2)"}
+RESULT: {"using":"css selector","value":"#grid_394431918_0_content_table > tbody > tr:nth-child(1) > td:nth-child(2)"}
+COMMAND: GET /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/element/39589c89-4a8d-4303-a9c0-32138e711676/rect - {}
+RESULT: {}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/execute/sync - {"script":"return (function () {\n        return { scrollX: this.pageXOffset, scrollY: this.pageYOffset };\n    }).apply(null, arguments)","args":[]}
+RESULT: {"script":"return (function () {\n        return { scrollX: this.pageXOffset, scrollY: this.pageYOffset };\n    }).apply(null, arguments)","args":[]}
+COMMAND: POST /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/actions - {"actions":[{"id":"action3","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"}]}]}
+RESULT: {"actions":[{"id":"action3","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"}]}]}
+COMMAND: DELETE /session/978d8bbd-248a-4ce3-9ffb-2d410f151906/actions - {}
+RESULT: {}
+COMMAND: DELETE /session/978d8bbd-248a-4ce3-9ffb-2d410f151906 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
