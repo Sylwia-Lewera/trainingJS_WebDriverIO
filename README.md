@@ -75,3 +75,16 @@ ACCEPTANCE CRITERIA
 2.    Screenshots for the failed tests are saved 
 
 3.    Tests are run on Firefox browser 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+TASK #5 Page Object
+
+1.    Convert your project from previous home tasks to a proper layered structure. 
+
+2.    Implement POM approach. 
+
+ACCEPTANCE CRITERIA 
+
+1.    Project has correct structure with all necessary layers 
+
+2.    POM implemented in the project. 
